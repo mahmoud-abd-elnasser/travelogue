@@ -17,7 +17,7 @@ const divs = document.querySelectorAll('.d');
 divs.forEach(div => {
   div.addEventListener('click', function() {
 
-    window.location.href = './../page.html';
+    window.location.href = 'https://mahmoud-abd-elnasser.github.io/travelogue/page.html';
   });
 });
 
