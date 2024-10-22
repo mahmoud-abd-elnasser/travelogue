@@ -18,7 +18,7 @@ async function signup(data) {
       icon: "success",
       title: "Login Successful",
     }).then(() => {
-      window.location.href = './../index.html';
+      window.location.href = 'https://mahmoud-abd-elnasser.github.io/travelogue/';
       localStorage.setItem('email', email.value);
       localStorage.setItem('token', result.token);
     });
