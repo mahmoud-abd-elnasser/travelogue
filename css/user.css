@@ -1,0 +1,291 @@
+body {
+    font-family: rubik;
+}
+
+.big-holder {
+    background: url('./../assets/wallpaperflare.com_wallpaper\ \(7\).jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 20px;
+
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.holder {
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    border-radius: 15px;
+}
+
+.holder img {
+    width: 15%;
+    border: 2px solid rgba(255, 255, 255, 0.726);
+}
+
+.holder h1 {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-name: titleAnimation;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    }
+
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    }
+}
+
+#one,
+#two,
+#three {
+    width: 100%;
+    margin: 0.5rem 0 1.1rem 0;
+    padding: 10px 5px;
+    color: #042e40;
+    background-color: rgba(245, 245, 245, 0.308);
+    border: none;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.692);
+    transition: all ease-in-out .3s;
+}
+
+#one,
+#two,
+#three:focus {
+    outline: none;
+}
+
+#three {
+    background-color: transparent;
+}
+
+#one,
+#two,
+#three:disabled {
+    background-color: transparent;
+
+}
+
+.inputs label {
+    color: white;
+    font-size: 1.1rem;
+}
+
+#update,
+#btn {
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #042e40;
+    border-radius: 15px;
+}
+
+#one:disabled {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(1544%) hue-rotate(140deg) brightness(91%) contrast(89%);
+}
+
+#two:disabled {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(1544%) hue-rotate(140deg) brightness(91%) contrast(89%);
+}
+
+#three:disabled {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(0%) saturate(1544%) hue-rotate(140deg) brightness(91%) contrast(89%);
+}
+
+#btn:disabled {
+    filter: opacity(0.5)
+}
+
+.img-holder {
+    background: url('../assets/paris-back.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.img-holder-1 {
+    background: url('../assets/1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.img-holder-2 {
+    background: url('../assets/6.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.img-holder-3 {
+    background: url('../assets/poza-11.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.card {
+    overflow: hidden;
+    padding: 0;
+}
+
+.title h1 {
+    width: 50%;
+    background-color: #042e40;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.card-p {
+    width: 50%;
+}
+
+@media only screen and (max-width: 880px) {
+    .card-p {
+        width: 75%;
+    }
+
+    .cardd {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .holder h1 {
+        font-size: 2rem;
+    }
+
+    .holder {
+        width: 75%;
+    }
+
+    .title h1 {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+    .card-p {
+        width: 90%;
+    }
+
+    .cardd {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .holder h1 {
+        font-size: 2rem;
+    }
+
+    .holder {
+        width: 90%;
+    }
+
+    .title h1 {
+        width: 90%;
+    }
+
+    .holder img {
+        width: 30%;
+    }
+
+}
+
+.back {
+    margin-left: 20px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back a {
+    margin-right: 2px;
+    transform: translate(2px);
+}
+
+.btn.log {
+    transition: all .3s ease-in-out;
+    background-color: #042e40;
+    color: white;
+}
+
+.btn.log:hover {
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.btn.sign {
+    transition: all 0.3s ease-in-out;
+    background-color: #554edd;
+    color: #fff;
+}
+
+.btn.sign:hover {
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.058);
+    border: solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

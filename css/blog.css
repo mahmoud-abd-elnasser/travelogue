@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: rubik; 
+}
+.background{
+    background: url('../assets/paris-back.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pInputs{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.058);
+    border: solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.058);
+    border: solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input-group{
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-control{
+    margin-top: 10px;
+    width: 100% !important;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+.btn{
+    display: block;
+    padding: 8px 20px;
+    border: 0;
+    background: #554edd;
+    color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#btn{
+    color: white;
+    background-color: #73a0c9;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+#btn:hover{
+    border: solid 2px white;
+    background-color: transparent;
+}
+.btn.update{
+    transition: all .3s ease-in-out;
+    background-color: #25ca60;
+}
+.btn.delete{
+    transition: all .3s ease-in-out;
+    background-color: #e83f34;
+}
+.btn.delete:hover{
+    border: solid 2px #e83f34;
+    background-color: transparent;
+    color: #e83f34;
+    
+}
+.btn.see{
+    transition: all .3s ease-in-out;
+    background-color: #042e40;
+}
+.btn.see:hover{
+    border: solid 2px #042e40;
+    background-color: transparent;
+    color: #042e40;
+    
+}
+.btn.log{
+    transition: all .3s ease-in-out;
+    background-color: #042e40;
+}
+.btn.log:hover{
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: #fff;
+    
+}
+.btn.sign{
+    transition: all 0.3s ease-in-out;
+    background-color: #554edd;
+}
+.btn.sign:hover{
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: #fff;
+    
+}
+.btn.update:hover{
+    background-color: transparent;
+    border: solid 2px #25ca60;
+    color: #25ca60;
+}
+
+
+
+table>:not(caption)>*>*{
+    border: 0px !important;
+}
+
+#holder-0{
+    background: url('../assets/0.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-1{
+    background: url('../assets/1.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-2{
+    background: url('../assets/2.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-3{
+    background: url('../assets/3.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-4{
+    background: url('../assets/4.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-5{
+    background: url('../assets/5.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+#holder-6{
+    background: url('../assets/6.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+
+.card{
+    overflow: hidden;
+    padding: 0;
+}
+
+.back{
+    position: absolute;
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back a{
+    margin-right: 2px;
+    transform: translate(2px);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="icon" type="image/x-icon" href="./assets/tab.png">
+
+    <title>Your Account</title>
+</head>
+
+<body>
+    <div class="big-holder ">
+        <div class="back">
+            <a href="index.html"><i class="fa-solid fa-house fs-4 text-dark"></i></a>
+        </div>
+    <div class="d-flex align-items-center justify-content-center page">
+        <div class="holder p-3">
+            <div class="img d-flex justify-content-center">
+                <img src="./assets/Portrait_Placeholder.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="d-flex justify-content-center my-3">
+                <h1 id="greet"></h1>
+            </div>
+            <div class="d-flex justify-content-center inputs my-4">
+                <div class="d-flex justify-content-center flex-column w-75">
+                    <label for="one">User Name :</label>
+                    <input type="text" id="one" class="input" disabled>
+                    <label for="one">e-mail :</label>
+                    <input type="text" id="two" class="input" disabled>
+                    <label for="one">Phone Number :</label>
+                    <input type="text" id="three" class="input" disabled>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around my-3">
+                <button id="update">Update Your Data</button>
+                <button id="btn" disabled>Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <center><h1 class="text-light">MY LAST BLOGS</h1></center>
+    </div>
+    <div class="d-flex justify-content-center">        
+        <div class="my-4 card-p">
+                                                    <div class="card cardd mb-3">
+                                                <div class="row">
+                                                    <div class="col-md-4 img-holder">
+                                                    </div>
+                                                    <div class="col-md-8 my-3">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-3">Hiking Through the Rockies</h5>
+                                                            <p class="card-date text-muted">Date: 12 Dec 2022</p>
+                                                            <p class="card-location text-muted">Location: Bali, Indonesia
+                                                            </p>
+                            <p class="card-text">The towering peaks of the Rockies provide breathtaking views, making it a must-visit destination for nature lovers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">        
+        <div class="my-4 card-p">
+                                                    <div class="card cardd mb-3">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4 img-holder-1">
+                                                    </div>
+                                                    <div class="col-md-8 my-3">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-3">Discovering the Hidden Gems of Santorini</h5>
+                                                            <p class="card-date text-muted">Date: 5 May 2023</p>
+                                                            <p class="card-location text-muted">Location: Santorini, Greece</p>
+                            <p class="card-text">From the stunning sunsets to the beautiful whitewashed buildings, Santorini offers endless charm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="my-4 card-p">
+                                                    <div class="card cardd mb-3">
+                                                <div class="row g-0">
+                                                    <div class="col-md-4 img-holder-2">
+                                                    </div>
+                                                    <div class="col-md-8 my-3">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-3">A Culinary Journey in Paris</h5>
+                                                            <p class="card-date text-muted">Date: 30 September 2023
+                                                            </p>
+                                                            <p class="card-location text-muted">Location: Paris, France
+
+
+                                                            </p>
+                            <p class="card-text"> Paris is not just about art and culture, but also a haven for food enthusiasts seeking authentic French cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="card-p my-4">
+                                                    <div class="card cardd mb-3">
+                                                <div class="row">
+                                                    <div class="col-md-4 img-holder-3">
+                                                    </div>
+                                                    <div class="col-md-8 my-3">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-3">Exploring the Temples of Kyoto</h5>
+                                                            <p class="card-date text-muted">Date: 15 March 2023
+                                                            </p>
+                                                            <p class="card-location text-muted">Location: Kyoto, Japan
+                                                            </p>
+                            <p class="card-text">The beauty of the temples in Kyoto is unparalleled. The content here delves deeper into the history and significance of these ancient structures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="message d-none">
+    <span class="text-light fs-3 fw-medium">To Share You Blog You Must Login first</span>
+    <div class="my-3 d-flex justify-content-center">
+        <button class="btn log" onclick="window.location.href='./log-in.html'">Login</button>
+    </div>
+    <span class="text-light fs-5">Don't Have Any Account Sign Up Here</span>
+    <div class="my-3 d-flex justify-content-center">
+        <button class="btn sign" onclick="window.location.href='./sign-up.html'">Sign Up</button>
+    </div>
+</div>
+
+ 
+
+
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

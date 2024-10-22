@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    font-family:"DM Sans", sans-serif;
+}
+
+.back{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.backk{
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .backk a{
+      margin-right: 2px;
+      color: #042e40;
+  }
+.back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/paris-back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+    }
+.page{
+    height: 80%;
+    width: 60%;
+    background-image: url(../assets/paris-back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px #ffffff1b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.container{
+    background-color: #292929;
+    width: 55%;
+    height: 100%;
+    margin: 0;
+    float: right;
+}
+.container h1{
+    margin: 0;
+    padding: 40px 0 5px;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: #f1f2f4;
+}
+.page:hover{
+    h1{
+        color: #6e8950;
+    }
+    transform: scale(1.02);
+}
+.container p{
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #e9e9e9ef;
+    line-height: 1.5;
+}
+.img{
+    text-align: center;
+    margin: 30px 0;
+}
+.holder{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: #f1f2f44d solid 2px;
+    padding: 5px 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    width: 70%;
+    color: #f1f2f4;
+}
+input:focus{
+    outline: none;
+    border-bottom: #f1f2f4 solid 2px;
+    padding-bottom: 10px;
+}
+.button{
+    width: 70%;
+    margin: 20px 0;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f1f2f4;
+    color: #292929;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.button:hover{
+    background-color: #6e8950;
+    box-shadow: 0 0 15px #f1f2f448;
+    color: #f1f2f4;
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+    width: 100%;
+    }
+    .page:hover{
+        h1{
+            color: #6e8950;
+        }
+        transform: scale(1);
+    }
+  }
+@media only screen and (max-width: 550px) {
+    .page{
+        width: 100%;
+        height: 100%;
+        border-radius: 0
+    }
+    .container{
+        width: 100%;
+    }
+    .page:hover{
+        h1{
+            color: #f1f2f4;
+        }
+        transform: scale(1);
+    }
+  }

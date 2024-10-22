@@ -1,0 +1,1472 @@
+body {
+    overflow-x: hidden;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.guide{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: #00000077;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+.color {
+    color: white;
+}
+
+/* start home */
+#home {
+    height: 100vh;
+    background-image: url(../media/poza_2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: ubuntu;
+}
+
+.nav {
+    position:fixed;
+    right: 20px;
+}
+
+.nav svg {
+    border: solid white 3px;
+    padding: 6px 8px;
+    transition: all 0.2s;
+}
+
+.nav svg:hover {
+    filter: brightness(0.85);
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+.d{
+    cursor: pointer;
+}
+
+
+.offcanvas {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.offcanvas-body::-webkit-scrollbar {
+    display: none;
+}
+
+.links{
+    margin: 20px 0;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.link a svg {
+    padding: 0;
+    margin-bottom: 3px;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#style-6 {
+    background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: auto 175%;
+    transition: background .3s ease-in-out;
+
+    &:hover {
+        background-position-y: 100%;
+    }
+}
+
+.off-input{
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.409) 2px;
+    padding: 5px;
+}
+.off-input::placeholder{
+    color: rgba(255, 255, 255, 0.409);
+}
+.fa-facebook-f{
+    color: white;
+    background-color: #1877F2;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.fa-twitter{
+    color: white;
+    background-color: #1da1f2;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.fa-google{
+    color: white;
+    background-color: #e94235;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.fa-youtube{
+    color: white;
+    background-color: #f00;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.fa-pinterest-p{
+    color: white;
+    background-color: #f00;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.fa-linkedin{
+    color: white;
+    background-color: #0077b5;
+    border: solid 1px white;
+    filter: grayscale(1);
+    transition: all .3s ease-in-out;
+    margin: 20px 0;
+    width: 15px;
+    height: 20px;
+}
+.social svg{
+    margin-left: 10px;
+}
+.social svg:hover{
+    filter: grayscale(0);
+}
+
+.fs-0 {
+    font-size: 100px;
+}
+
+.down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.down svg {
+    border: solid white 3px;
+    padding: 6px 8px;
+    transition: all 0.2s;
+}
+
+.down svg:hover {
+    filter: brightness(0.85);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 0px) {
+
+    .fs-0 {
+        font-size: 30px;
+    }
+
+    #offcanvasScrolling {
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .fs-0 {
+        font-size: 50px;
+    }
+
+    #offcanvasScrolling {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .fs-0 {
+        font-size: 100px;
+    }
+
+    #offcanvasScrolling {
+        width: 25%;
+    }
+}
+
+/* end home */
+
+
+
+/* start categ */
+.content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.head-line {
+    height: calc(940px / 4);
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.head-line span {
+    padding-left: 10px;
+    translate: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.d-1:hover .head-line {
+    margin-top: 0;
+}
+
+.d-1:hover .content {
+    opacity: 1;
+}
+.d-1:hover .head-line span {
+    translate: 0;
+}
+
+.d-1 {
+    background-image: url(../media/las-vegas-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-1:hover {
+    background-size:115% 115%;
+}
+
+
+
+.d-2:hover .head-line {
+    margin-top: 0;
+}
+
+.d-2:hover .content {
+    opacity: 1;
+}
+.d-2:hover .head-line span {
+    translate: 0;
+}
+
+.d-2 {
+    background-image: url(../media/poza-10.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-2:hover {
+    background-size:115% 115%;
+}
+
+
+
+.d-3:hover .head-line {
+    margin-top: 0;
+}
+
+.d-3:hover .content {
+    opacity: 1;
+}
+.d-3:hover .head-line span {
+    translate: 0;
+}
+
+.d-3 {
+    background-image: url(../media/los-angeles-1.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-3:hover {
+    background-size:115% 115%;
+}
+
+
+
+.d-4:hover .head-line {
+    margin-top: 0;
+}
+
+.d-4:hover .content {
+    opacity: 1;
+}
+.d-4:hover .head-line span {
+    translate: 0;
+}
+
+.d-4 {
+    background-image: url(../media/4.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-4:hover {
+    background-size:115% 115%;
+}
+
+
+
+.d-5:hover .head-line {
+    margin-top: 0;
+}
+
+.d-5:hover .content {
+    opacity: 1;
+}
+.d-5:hover .head-line span {
+    translate: 0;
+}
+
+.d-5 {
+    background-image: url(../media/poza-5.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-5:hover {
+    background-size:115% 115%;
+}
+
+
+
+.d-6:hover .head-line {
+    margin-top: 0;
+}
+
+.d-6:hover .content {
+    opacity: 1;
+}
+.d-6:hover .head-line span {
+    translate: 0;
+}
+
+.d-6 {
+    background-image: url(../media/paris-1.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-6:hover {
+    background-size:115% 115%;
+}
+.d-7:hover .head-line {
+    margin-top: 0;
+}
+
+.d-7:hover .content {
+    opacity: 1;
+}
+.d-7:hover .head-line span {
+    translate: 0;
+}
+
+.d-7 {
+    background-image: url(../media/city-break-10.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-7:hover {
+    background-size:115% 115%;
+}
+.d-8:hover .head-line {
+    margin-top: 0;
+}
+
+.d-8:hover .content {
+    opacity: 1;
+}
+.d-8:hover .head-line span {
+    translate: 0;
+}
+
+.d-8 {
+    background-image: url(../media/las-vegas-10.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-8:hover {
+    background-size:115% 115%;
+}
+.d-9:hover .head-line {
+    margin-top: 0;
+}
+
+.d-9:hover .content {
+    opacity: 1;
+}
+.d-9:hover .head-line span {
+    translate: 0;
+}
+
+.d-9 {
+    background-image: url(../media/city-break-13.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-9:hover {
+    background-size:115% 115%;
+}
+.d-9:hover .head-line {
+    margin-top: 0;
+}
+
+.d-9:hover .content {
+    opacity: 1;
+}
+.d-9:hover .head-line span {
+    translate: 0;
+}
+
+.d-9 {
+    background-image: url(../media/city-break-13.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-9:hover {
+    background-size:115% 115%;
+}
+.d-9:hover .head-line {
+    margin-top: 0;
+}
+
+.d-9:hover .content {
+    opacity: 1;
+}
+.d-9:hover .head-line span {
+    translate: 0;
+}
+
+.d-9 {
+    background-image: url(../media/city-break-13.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-9:hover {
+    background-size:115% 115%;
+}
+.d-10:hover .head-line {
+    margin-top: 0;
+}
+
+.d-10:hover .content {
+    opacity: 1;
+}
+.d-10:hover .head-line span {
+    translate: 0;
+}
+
+.d-10 {
+    background-image: url(../media/paris-2.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-10:hover {
+    background-size:115% 115%;
+}
+.d-11:hover .head-line {
+    margin-top: 0;
+}
+
+.d-11:hover .content {
+    opacity: 1;
+}
+.d-11:hover .head-line span {
+    translate: 0;
+}
+
+.d-11 {
+    background-image: url(../media/las-vegas-14.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-11:hover {
+    background-size:115% 115%;
+}
+.d-12:hover .head-line {
+    margin-top: 0;
+}
+
+.d-12:hover .content {
+    opacity: 1;
+}
+.d-12:hover .head-line span {
+    translate: 0;
+}
+
+.d-12 {
+    background-image: url(../media/poza_2.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-12:hover {
+    background-size:115% 115%;
+}
+.d-13:hover .head-line {
+    margin-top: 0;
+}
+
+.d-13:hover .content {
+    opacity: 1;
+}
+.d-13:hover .head-line span {
+    translate: 0;
+}
+
+.d-13 {
+    background-image: url(../media/poza-12.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-13:hover {
+    background-size:115% 115%;
+}
+.d-14:hover .head-line {
+    margin-top: 0;
+}
+
+.d-14:hover .content {
+    opacity: 1;
+}
+.d-14:hover .head-line span {
+    translate: 0;
+}
+
+.d-14 {
+    background-image: url(../media/paris-13.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-14:hover {
+    background-size:115% 115%;
+}
+.d-15:hover .head-line {
+    margin-top: 0;
+}
+
+.d-15:hover .content {
+    opacity: 1;
+}
+.d-15:hover .head-line span {
+    translate: 0;
+}
+
+.d-15 {
+    background-image: url(../media/15.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-15:hover {
+    background-size:115% 115%;
+}
+.d-16:hover .head-line {
+    margin-top: 0;
+}
+
+.d-16:hover .content {
+    opacity: 1;
+}
+.d-16:hover .head-line span {
+    translate: 0;
+}
+
+.d-16 {
+    background-image: url(../media/paris-9.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-16:hover {
+    background-size:115% 115%;
+}
+.d-17:hover .head-line {
+    margin-top: 0;
+}
+
+.d-17:hover .content {
+    opacity: 1;
+}
+.d-17:hover .head-line span {
+    translate: 0;
+}
+
+.d-17 {
+    background-image: url(../media/las-vegas-8.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-17:hover {
+    background-size:115% 115%;
+}
+.d-18:hover .head-line {
+    margin-top: 0;
+}
+
+.d-18:hover .content {
+    opacity: 1;
+}
+.d-18:hover .head-line span {
+    translate: 0;
+}
+
+.d-18 {
+    background-image: url(../media/los-angeles-2.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-18:hover {
+    background-size:115% 115%;
+}
+
+.d-19:hover .head-line {
+    margin-top: 0;
+}
+
+.d-19:hover .content {
+    opacity: 1;
+}
+
+.d-19:hover .head-line span {
+    translate: 0;
+}
+
+.d-19 {
+    background-image: url(../media/los-angeles-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-19:hover {
+    background-size: 115% 115%;
+}
+
+.d-20:hover .head-line {
+    margin-top: 0;
+}
+
+.d-20:hover .content {
+    opacity: 1;
+}
+
+.d-20:hover .head-line span {
+    translate: 0;
+}
+
+.d-20 {
+    background-image: url(../media/las-vegas-20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-20:hover {
+    background-size: 115% 115%;
+}
+
+
+.d-21:hover .head-line {
+    margin-top: 0;
+}
+
+.d-21:hover .content {
+    opacity: 1;
+}
+
+.d-21:hover .head-line span {
+    translate: 0;
+}
+
+.d-21 {
+    background-image: url(../media/poza-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-21:hover {
+    background-size: 115% 115%;
+}
+
+.d-22:hover .head-line {
+    margin-top: 0;
+}
+
+.d-22:hover .content {
+    opacity: 1;
+}
+
+.d-22:hover .head-line span {
+    translate: 0;
+}
+
+.d-22 {
+    background-image: url(../media/22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-22:hover {
+    background-size: 115% 115%;
+}
+
+.d-23:hover .head-line {
+    margin-top: 0;
+}
+
+.d-23:hover .content {
+    opacity: 1;
+}
+
+.d-23:hover .head-line span {
+    translate: 0;
+}
+
+.d-23 {
+    background-image: url(../media/poza-11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-23:hover {
+    background-size: 115% 115%;
+}
+
+.d-24:hover .head-line {
+    margin-top: 0;
+}
+
+.d-24:hover .content {
+    opacity: 1;
+}
+
+.d-24:hover .head-line span {
+    translate: 0;
+}
+
+.d-24 {
+    background-image: url(../media/paris-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-24:hover {
+    background-size: 115% 115%;
+}
+
+.d-25:hover .head-line {
+    margin-top: 0;
+}
+
+.d-25:hover .content {
+    opacity: 1;
+}
+
+.d-25:hover .head-line span {
+    translate: 0;
+}
+
+.d-25 {
+    background-image: url(../media/las-vegas-15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-25:hover {
+    background-size: 115% 115%;
+}
+
+.d-26:hover .head-line {
+    margin-top: 0;
+}
+
+.d-26:hover .content {
+    opacity: 1;
+}
+
+.d-26:hover .head-line span {
+    translate: 0;
+}
+
+.d-26 {
+    background-image: url(../media/poza-15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-26:hover {
+    background-size: 115% 115%;
+}
+
+.d-27:hover .head-line {
+    margin-top: 0;
+}
+
+.d-27:hover .content {
+    opacity: 1;
+}
+
+.d-27:hover .head-line span {
+    translate: 0;
+}
+
+.d-27 {
+    background-image: url(../media/city-break-7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-27:hover {
+    background-size: 115% 115%;
+}
+
+.d-28:hover .head-line {
+    margin-top: 0;
+}
+
+.d-28:hover .content {
+    opacity: 1;
+}
+
+.d-28:hover .head-line span {
+    translate: 0;
+}
+
+.d-28 {
+    background-image: url(../media/city-break-8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-28:hover {
+    background-size: 115% 115%;
+}
+
+.d-29:hover .head-line {
+    margin-top: 0;
+}
+
+.d-29:hover .content {
+    opacity: 1;
+}
+
+.d-29:hover .head-line span {
+    translate: 0;
+}
+
+.d-29 {
+    background-image: url(../media/los-angeles-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-29:hover {
+    background-size: 115% 115%;
+}
+
+.d-30:hover .head-line {
+    margin-top: 0;
+}
+
+.d-30:hover .content {
+    opacity: 1;
+}
+
+.d-30:hover .head-line span {
+    translate: 0;
+}
+
+.d-30 {
+    background-image: url(../media/30.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-30:hover {
+    background-size: 115% 115%;
+}
+
+.d-31:hover .head-line {
+    margin-top: 0;
+}
+
+.d-31:hover .content {
+    opacity: 1;
+}
+
+.d-31:hover .head-line span {
+    translate: 0;
+}
+
+.d-31 {
+    background-image: url(../media/31.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-31:hover {
+    background-size: 115% 115%;
+}
+
+.d-32:hover .head-line {
+    margin-top: 0;
+}
+
+.d-32:hover .content {
+    opacity: 1;
+}
+
+.d-32:hover .head-line span {
+    translate: 0;
+}
+
+.d-32 {
+    background-image: url(../media/poza-13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-32:hover {
+    background-size: 115% 115%;
+}
+
+.d-33:hover .head-line {
+    margin-top: 0;
+}
+
+.d-33:hover .content {
+    opacity: 1;
+}
+
+.d-33:hover .head-line span {
+    translate: 0;
+}
+
+.d-33 {
+    background-image: url(../media/33.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-33:hover {
+    background-size: 115% 115%;
+}
+
+.d-34:hover .head-line {
+    margin-top: 0;
+}
+
+.d-34:hover .content {
+    opacity: 1;
+}
+
+.d-34:hover .head-line span {
+    translate: 0;
+}
+
+.d-34 {
+    background-image: url(../media/34.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-34:hover {
+    background-size: 115% 115%;
+}
+
+.d-35:hover .head-line {
+    margin-top: 0;
+}
+
+.d-35:hover .content {
+    opacity: 1;
+}
+
+.d-35:hover .head-line span {
+    translate: 0;
+}
+
+.d-35 {
+    background-image: url(../media/paris-7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-35:hover {
+    background-size: 115% 115%;
+}
+
+.d-36:hover .head-line {
+    margin-top: 0;
+}
+
+.d-36:hover .content {
+    opacity: 1;
+}
+
+.d-36:hover .head-line span {
+    translate: 0;
+}
+
+.d-36 {
+    background-image: url(../media/31.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-36:hover {
+    background-size: 115% 115%;
+}
+
+.d-37:hover .head-line {
+    margin-top: 0;
+}
+
+.d-37:hover .content {
+    opacity: 1;
+}
+
+.d-37:hover .head-line span {
+    translate: 0;
+}
+
+.d-37 {
+    background-image: url(../media/las-vegas-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-37:hover {
+    background-size: 115% 115%;
+}
+
+.d-38:hover .head-line {
+    margin-top: 0;
+}
+
+.d-38:hover .content {
+    opacity: 1;
+}
+
+.d-38:hover .head-line span {
+    translate: 0;
+}
+
+.d-38 {
+    background-image: url(../media/city-break-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-38:hover {
+    background-size: 115% 115%;
+}
+
+.d-39:hover .head-line {
+    margin-top: 0;
+}
+
+.d-39:hover .content {
+    opacity: 1;
+}
+
+.d-39:hover .head-line span {
+    translate: 0;
+}
+
+.d-39 {
+    background-image: url(../media/los-angeles-11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-39:hover {
+    background-size: 115% 115%;
+}
+
+.d-40:hover .head-line {
+    margin-top: 0;
+}
+
+.d-40:hover .content {
+    opacity: 1;
+}
+
+.d-40:hover .head-line span {
+    translate: 0;
+}
+
+.d-40 {
+    background-image: url(../media/city-break-12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-40:hover {
+    background-size: 115% 115%;
+}
+
+.d-41:hover .head-line {
+    margin-top: 0;
+}
+
+.d-41:hover .content {
+    opacity: 1;
+}
+
+.d-41:hover .head-line span {
+    translate: 0;
+}
+
+.d-41 {
+    background-image: url(../media/las-vegas-16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-41:hover {
+    background-size: 115% 115%;
+}
+
+.d-42:hover .head-line {
+    margin-top: 0;
+}
+
+.d-42:hover .content {
+    opacity: 1;
+}
+
+.d-42:hover .head-line span {
+    translate: 0;
+}
+
+.d-42 {
+    background-image: url(../media/poza-14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-42:hover {
+    background-size: 115% 115%;
+}
+
+.d-43:hover .head-line {
+    margin-top: 0;
+}
+
+.d-43:hover .content {
+    opacity: 1;
+}
+
+.d-43:hover .head-line span {
+    translate: 0;
+}
+
+.d-43 {
+    background-image: url(../media/30.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-43:hover {
+    background-size: 115% 115%;
+}
+
+.d-44:hover .head-line {
+    margin-top: 0;
+}
+
+.d-44:hover .content {
+    opacity: 1;
+}
+
+.d-44:hover .head-line span {
+    translate: 0;
+}
+
+.d-44 {
+    background-image: url(../media/44.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-44:hover {
+    background-size: 115% 115%;
+}
+
+.d-45:hover .head-line {
+    margin-top: 0;
+}
+
+.d-45:hover .content {
+    opacity: 1;
+}
+
+.d-45:hover .head-line span {
+    translate: 0;
+}
+
+.d-45 {
+    background-image: url(../media/45.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 0;
+}
+
+.d-45:hover {
+    background-size: 115% 115%;
+}
+
+
+
+
+
+
+/* end categ */
