@@ -8,7 +8,7 @@ body{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-image: url('../assets/_1f1b3d32-a547-4723-b10a-6e23b182607a.jpeg');
+    background-image: url('./../assets/poza-11.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
