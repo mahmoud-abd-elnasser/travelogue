@@ -16,7 +16,7 @@ async function signup(data) {
     Swal.fire({
       icon: "success", title: "Signed up Successfully", text: `Please Login!`,
     }).then(() => {
-      window.location.href = "./../log-in.html";
+      window.location.href = "https://mahmoud-abd-elnasser.github.io/travelogue/log-in.html";
     });
   } else {
     Swal.fire({
